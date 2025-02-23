@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>India Website</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        
+        /* Video container */
+        .video-background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            z-index: -1; /* Keeps video behind content */
+        }
+
+        video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Ensures video fills the screen */
+        }
+
+        /* Navigation bar */
+        .nav-bar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.5); /* Semi-transparent background for nav */
+            padding: 10px 0;
+            z-index: 10;
+            text-align: center;
+        }
+
+        .nav-bar ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        .nav-bar li {
+            display: inline;
+            margin: 0 20px;
+        }
+
+        .nav-bar a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        .nav-bar a:hover {
+            text-decoration: underline;
+        }
+
+        /* Overlay content */
+        .content {
+            position: relative;
+            z-index: 1;
+            color: white;
+            text-align: center;
+            padding: 20vh 20px; /* Vertically centers content */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Improves readability */
+        }
+
+        h1 {
+            font-size: 72px;
+            margin-bottom: 20px;
+        }
+
+        button {
+            padding: 12px 30px;
+            font-size: 18px;
+            background-color: #007bff;
+            border: none;
+            border-radius: 25px;
+            color: white;
+            cursor: pointer;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="video-background">
+        <video autoplay muted loop>
+            <source src="India.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <div class="nav-bar">
+        <ul>
+            <li><a href="#home">HOME</a></li>
+            <li><a href="#beaches">BEACHES</a></li>
+            <li><a href="#popular-places">POPULAR PLACES</a></li>
+            <li><a href="#contact">CONTACT US</a></li>
+        </ul>
+    </div>
+
+    <div class="content">
+        <h1>India Population Review</h1>
+        <button>Explore</button>
+    </div>
+
+</body>
+</html>
